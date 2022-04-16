@@ -5,7 +5,7 @@ function rollDice() {
 function rollIntro() {
     console.log("rolls dice")
     rollDice()
-    document.querySelector('#name').innerText = "Hello, I'm... Nicholas Tonelli"
+    document.querySelector('#name').innerText = "Nicholas Tonelli"
 }
 
 

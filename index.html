@@ -4,49 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Potfolio</title>
+    <title>Nick Tonelli</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="first-flex">
-      <div class="top">
-        <div class="developer-name">
-          <h1 id="name">Hello, I'm...</h1>
-          <p>
-            Ruby on Rails | MERN stack applications | Javascript, Ruby, Python
-          </p>
-          <div class="icons">
-            <i class="fa fa-2x fa-github"
-              ><a href="https://github.com/nicholastonelli">Github</a></i
-              >
-            <i class="fa fa-2x fa-linked-in"
-              ><a href="https://www.linkedin.com/in/nicholas-tonelli/"
-                >LinkedIn</a
-              ></i
-            >
-          </div>
-        </div>
-        <a href="mailto:nicholasevantonelli@gmail.com"
-          >Feel free to reach out.</a
-        >
+    <nav role="navigation" id="nav">
+      <ul id="nav-list">
+        <li><a href="">Roll it Again</a></li>
+        <li><a href="/#about">About Me</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#resume">Resume</a></li>
+      </ul>
+    </nav>
+    <div id="main">
+      <div id="image-div">
+        <img
+          src="/public/images/photo.jpg"
+          alt="a Portrait of myself."
+          id="photo"
+        />
       </div>
-    </div>
-    <div class="first-flex">
-      <h2>My Work</h2>
-      <div class="card">
-        <h6>D&D Trivia Game</h6>
-        <p>A Javascript app game.</p>
-      </div>
-      <div class="card">
-        <h6>D&D Stor</h6>
-        <p>A Node Express store.</p>
-      </div>
-      <div class="card">
-        <h6>Character Archive</h6>
-        <p>MERN Stack character archive.</p>
-      </div>
-    </div>
+      <h1>Hello, my name is... *rolls dice* Nick Tonelli.</h1>
+      <p>Pleased to meet you.</p>
+      <p>
+        Ruby, Python, Javascript | MongoDB, SQL, Express, Ruby on Rails | React,
+        Flask, MERN
+      </p>
 
+      <div class="category" id="about" data-nav="about">
+        <h1>ABOUT</h1>
+        <p>
+          "I am a charismatic, affable Full Stack Developer with a commitment to
+          team performance and client satisfaction. My years as a Manager and
+          Creator of Escape Rooms helps me with every challenge I encounter;
+          from excellent interpersonal skill, to rapid problem solving; from
+          resourceful team use to full project delivery."
+        </p>
+        <p>
+          "In my spare time I am an avid Tabletop Role Player, and make a
+          sincere. connection between the rules of Dungeons & Dragons and the
+          conventions and styles of Software Development. If you'd like to read
+          more, you can find my LinkedIn Article below."
+        </p>
+      </div>
+      <div class="category" id="projects" data-nav="projects">
+        <h1>PROJECTS</h1>
+        <div id="project-icons">
+          <p>Project 1</p>
+          <p>Project 2</p>
+          <p>Project 3</p>
+        </div>
+      </div>
+
+      <div class="category" id="resume" data-nav="Resume">
+        <h1>RESUME</h1>
+      </div>
+
+      <div id="footer">
+        <p>footer</p>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

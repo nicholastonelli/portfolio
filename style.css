@@ -1,61 +1,81 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab");
 
-.top {
-    background-color: aqua;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
-}
-
-p, body {
-  font-family: 'Raleway', sans-serif;
-
-}
-
-.first-flex {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  padding: 2%;
-  
-}
-
-.developer-name {
-  
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.icons i {
-  padding-right: 10px;
-}
-
-.card {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
+body {
+  font: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  background-color: #222733;
+  color: #DBE8D4
 }
 
-@media only screen and (max-width: 600px) {
-  .first-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+#image-div {
+  display: flex;
+  justify-content: center;
+}
+
+#photo {
+  display: block;
+    width: 30%;
+    height: auto;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 20rem;
+  z-index: 999;
+  background-color: #525e65;
+  text-align: center;
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+}
+
+#nav-list {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  display: inline-block;
+}
+
+#nav a {
+  display: block;
+  height: 3rem;
+  padding: 0 1rem;
+  color: #DBE8D4;
+  line-height: 3em;
+}
+
+h1 {
+  color: #DBE8D4
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#project-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   
-  .icons {
-    justify-content: center;
-  }
 }
