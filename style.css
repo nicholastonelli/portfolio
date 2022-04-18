@@ -6,7 +6,8 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #222733;
-  color: #DBE8D4
+  color: #DBE8D4;
+  font-size:1.5rem
 }
 
 #main {
